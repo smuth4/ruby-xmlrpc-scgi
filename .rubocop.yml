@@ -1,0 +1,7 @@
+Metrics/MethodLength:
+  Max: 30
+AllCops:
+    Exclude:
+      - '**/Rakefile'
+      - '**/*.gemspec'
+              
