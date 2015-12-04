@@ -1,6 +1,6 @@
 # XMLRPC::SCGI
 
-[![Build Status](https://travis-ci.org/smuth4/ruby-xmlrpc-scgi.svg)](https://travis-ci.org/smuth4/ruby-xmlrpc-scgi)
+[![Build Status](https://travis-ci.org/smuth4/ruby-xmlrpc-scgi.svg)](https://travis-ci.org/smuth4/ruby-xmlrpc-scgi) [![Gem Version](https://badge.fury.io/rb/xmlrpc-scgi.svg)](https://badge.fury.io/rb/xmlrpc-scgi)
 
 A small gem to extend the XMLRPC module by adding an SCGI client and server. It also goes the extra mile and adds support for the non-standard `i8` tag.
 
