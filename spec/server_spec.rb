@@ -7,7 +7,7 @@ describe XMLRPC::SCGIServer do
 
   context '.read_netstring' do
     it 'Valid netstring' do
-      expect(@server.read_netstring(StringIO.new('5:hello,'))).to eql('hello')
+      expect(@server.read_netstring(StringIO.new('5:helafsasfafalo,'))).to eql('hello')
     end
 
     it 'Invalid netstring - missing end comma' do
