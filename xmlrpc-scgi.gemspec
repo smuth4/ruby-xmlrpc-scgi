@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = XMLRPC::SCGI::VERSION
   spec.authors       = ["Stephen Muth"]
   spec.email         = ["smuth4@gmail.com"]
-  spec.summary       = %q{Extend XMLRPC with SCGI client and server.}
-  spec.description   = %q{Extend XMLRPC with SCGI client and server.}
-  spec.homepage      = ""
+  spec.summary       = %q{Extend XMLRPC with an SCGI client and server.}
+  spec.description   = %q{Extend XMLRPC with an SCGI client and server.}
+  spec.homepage      = "https://github.com/smuth4/ruby-xmlrpc-scgi"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
