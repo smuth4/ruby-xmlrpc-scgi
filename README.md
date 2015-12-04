@@ -9,7 +9,7 @@ A small gem to extend the XMLRPC module by adding an SCGI client and server. It 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem xmlrpc-scgi'
+gem 'xmlrpc-scgi'
 ```
 
 And then execute:
@@ -22,7 +22,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Server
+```ruby
+require 'xmlrpc/scgi'
+
+server = XMLRPC::SCGI.new '127.0.0.1:6000'
+server.add_handler('add') do |a, b|
+  a + b
+end
+
+# Runs until it is killed
+server.serve
+```
+
+Client
+```ruby
+require 'xmlrpc/scgi'
+
+client = XMLRPC::SCGIClient.new '127.0.0.1', '', 6000
+puts client.call('add', 4, 5)
+```
 
 ## Contributing
 
