@@ -23,7 +23,7 @@ module XMLRPC
         begin
           client = server.accept
           _, body = split_request(client)
-          client.write write_http("\n#{process(body)}")
+          client.write write_http("#{process(body)}")
         ensure
           # no matter what we have to put this thread on the bad list
           client.close unless client.nil? || client.closed?
@@ -36,6 +36,7 @@ module XMLRPC
         'Status: 200 OK.',
         'Content-Type: text/xml',
         "Content-Length: #{data.length}",
+        '',
         data
       ]
       content.join "\r\n"
