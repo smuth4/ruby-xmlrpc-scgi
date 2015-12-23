@@ -38,7 +38,7 @@ module XMLRPC
         "Content-Length: #{data.length}",
         data
       ]
-      content.join "\n\r"
+      content.join "\r\n"
     end
 
     def read_netstring(handle)
