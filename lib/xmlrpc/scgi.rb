@@ -1,4 +1,3 @@
-require 'pp'
 require 'xmlrpc/server'
 require 'xmlrpc/client'
 require 'xmlrpc/config'
