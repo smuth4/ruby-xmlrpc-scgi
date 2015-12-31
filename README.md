@@ -26,7 +26,7 @@ Server
 ```ruby
 require 'xmlrpc/scgi'
 
-server = XMLRPC::SCGI.new '127.0.0.1:6000'
+server = XMLRPC::SCGIServer.new '127.0.0.1:6000'
 server.add_handler('add') do |a, b|
   a + b
 end
